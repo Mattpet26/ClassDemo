@@ -28,7 +28,7 @@
                 </button>
                 <a asp-area="" asp-page="/index" class="navbar-brand">Home</a> 
                 <a asp-area="" asp-page="/settings" class="navbar-brand">Settings</a>
-
+                @await Component.InvokeAsync("LoggedInUser") 
             </div>
             <div class="navbar-collapse collapse">
             </div>
